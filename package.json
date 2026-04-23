@@ -1,0 +1,11 @@
+{
+  "name": "qpp",
+  "private": true,
+  "scripts": {
+    "db:up": "docker compose --env-file ./backend/.env up -d",
+    "db:down": "docker compose --env-file ./backend/.env down",
+    "db:logs": "docker compose logs -f db",
+    "backend": "npm run dev --prefix backend",
+    "frontend": "npm run dev --prefix frontend"
+  }
+}
